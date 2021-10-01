@@ -1,6 +1,6 @@
 ---
 topic:
-    module: 'Introduction to Data Science'
+    module: '1: Introduction to data science'
     title: 'Welcome'
 ---
 
@@ -12,6 +12,6 @@ This course is designed to introduce you to the core concepts of data science. I
 
 Play the following video to start.
 
-<iframe width="800" height="450" src="https://www.youtube.com/embed/lFpCvmaLyis" title="Welcome to DAT101" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="800" height="450" src="https://www.youtube.com/embed/lFpCvmaLyis" title="Welcome" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [Next >](./01-02-data-scientists.md)

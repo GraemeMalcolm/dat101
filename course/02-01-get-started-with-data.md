@@ -1,6 +1,6 @@
 ---
 topic:
-    module: 'It all starts with the data'
+    module: '2: It all starts with the data'
     title: 'Data basics'
 ---
 
