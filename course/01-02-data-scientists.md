@@ -1,6 +1,6 @@
 ---
 topic:
-    module: ''
+    module: 'Introduction to Data Science'
     title: 'Meet the data scientists'
 ---
 
