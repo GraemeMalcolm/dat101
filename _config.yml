@@ -4,9 +4,9 @@ exclude:
   - .github/
 header_pages:
   - index.html
-author: Microsoft Learning
-twitter_username: mslearning
-github_username:  MicrosoftLearning
+author: Graeme Malcolm
+twitter_username: graeme_malcolm
+github_username:  GraemeMalcolm
 plugins:
   - jekyll-sitemap
   - jekyll-mentions
