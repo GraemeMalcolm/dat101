@@ -10,4 +10,4 @@ Sometimes it can be hard to spot key insights in a large amount of data. You can
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/yeJ7dtGxIhs" title="Highlighting data" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[< Back](./02-03-derived-data.md) | [Next >](02-05-lab-get-started-with-data.md)
+[< Back](./02-03-derived-data.md) | [Next >](02-05-lab-explore-data.md)
