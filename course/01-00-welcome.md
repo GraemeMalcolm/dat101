@@ -4,7 +4,9 @@ topic:
     title: 'Welcome'
 ---
 
-# Welcome
+# 1: Introduction to data science
+
+## Welcome
 
 Welcome to the course, we're glad you're here!
 
@@ -14,4 +16,4 @@ Play the following video to start.
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/lFpCvmaLyis" title="Welcome" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[Next >](./01-02-data-scientists.md)
+[Next >](./01-01-data-scientists.md)

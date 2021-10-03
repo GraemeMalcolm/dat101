@@ -28,4 +28,4 @@ Let's find out what some real-world data scientists have to say about their job.
 
 <iframe width="800" height="450" src="https://www.youtube.com/embed/xCfbzjno1CY" title="What advice would you give an aspiring data scientist" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-[< Back](./01-01-welcome.md) | [Next >](02-01-get-started-with-data.md)
+[< Back](./01-00-welcome.md) | [Next >](./02-00-data.md)

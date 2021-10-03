@@ -143,7 +143,7 @@ In this exercise, you will use formulae to create derived columns that extend th
 
     ![Total revenue for July](./images/july-revenue.png)
 
-8.	Clear the filter on **Month** to show all the data, and verify that the revenue total reflects all months again.
+8. Clear the filter on **Month** to show all the data, and verify that the revenue total reflects all months again.
 
 ### Challenge: Find the total number of flyers distributed
 
@@ -188,4 +188,4 @@ Now that you’ve highlighted the cells, you can more easily make visual compari
 
 Scroll through the data, and just by looking at the visual formatting you’ve added, try to see if you can spot any relationship between temperature, rainfall, and sales that might form the basis of a hypothesis you’ll want to investigate more thoroughly.
 
-[< Back](./02-04-highlighting-data.md) | [Next >](03-01-intro-to-analyzing-data.md)
+[< Back](./02-04-highlighting-data.md) | [Next >](./03-00-analyzing-data.md)
