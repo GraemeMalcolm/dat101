@@ -231,7 +231,7 @@ This produces statistics from a different sample. Note that the closeness of the
  
     The means of the samples form a sampling distribution of the mean – in other words, a new data distribution that consists of the sample means.
 
-2. In cell **O1**, enter the text **Sampling Mean**. Then select cell **O2**and enter the following formula:
+2. In cell **O1**, enter the text **Sampling Mean**. Then select cell **O2** and enter the following formula:
 
     ```
     =AVERAGE(M3:M292)
@@ -244,7 +244,7 @@ This produces statistics from a different sample. Note that the closeness of the
 
     ![Histogram of sample means](./images/sampling-histogram.png)
  
-    The histogram may not look exactly symmetrical; but when you create a sampling distribution from a sufficiently large number of reasonably-sized samples, you’ll find that it has a bell-curved appearance. We won’t discuss this any further in this course, but it’s useful to know that with enough random samples, a sampling distribution generally takes on a normal distribution due to something called the central limit theorem – even when (as in this case), the population data from which the sample means are derived is not normally distributed.
+    The histogram may not look exactly symmetrical; but when you create a sampling distribution from a sufficiently large number of reasonably-sized samples, you’ll find that it has a bell-curved appearance. We won’t discuss this any further in this course, but it’s useful to know that with enough random samples, a sampling distribution generally takes on a normal distribution due to something called the *central limit theorem* – even when (as in this case), the population data from which the sample means are derived is not normally distributed.
 
 ### Challenge: Analyze temperature samples
 
