@@ -250,3 +250,136 @@ This produces statistics from a different sample. Note that the closeness of the
 
 1. Create a sampling distribution based on 290 samples of mean Temperature. Each sample should be based on 40 random observations.
 2. Calculate the mean of the temperature sampling distribution.
+
+## Exercise 3: Inferential statistics and hypothesis testing
+
+So far, we’ve explored descriptive statistics that describe the distribution of data in a full population or a sample. Inferential statistics, as the name suggests, are used to make inferences, or predictions, from data based on statistical relationships between fields (or features) of the data.
+
+### Measure correlation
+
+1. Switch back to the **Lemonade** worksheet in the **Lemonade.xlsx** workbook and select cell **A1** (the **Date** column header).
+2. On the **Insert** tab of the ribbon, click **PivotTable**; and insert a PivotTable for the lemonade sales table into a new worksheet.
+3. In the **PivotTable Fields** pane, drag **Date** to the **Rows** area and drag **Temperature** and **Sales** to the **Values** area so that your worksheet looks like this:
+
+    ![A PivotTable showing sum of temperature and sales by date](./images/pivot-date-temp-sales.png)
+
+4. Scroll to the bottom of the PivotTable until you can see the **Grand Total** row. You need to copy the temperature and sales values, excluding this grand total to a new worksheet.
+5. Click the cell containing the temperature value for December 31 2017 (above the grand total). Then press SHIFT + CTRL + **&#8679;** (SHIFT + **&#8984;** + **&#8679;** on Mac OSX) to select the column of temperature values, and then press SHIFT + **&#8680;** to extend the selection to include the sales values. Finally, use the **&#128464;** button on the **Home** tab of the ribbon to copy the selected cells to the clipboard.
+6. Create a new worksheet, and then on the new worksheet click cell **A1** and use the **Paste** button (&#128203;) to paste the copied data. Then change the columns headers to **Temperature** and **Sales** as shown here:
+
+    ![A worksheet containing temperature and sales](./images/new-sheet-temp-sales.png)
+ 
+7. Select cell **A1** (the Temperature column header) and press CTRL + A (**&#8679;** + A on Mac OSX) to select the data, and then on the **Insert** tab of the ribbon, in the **Scatter** drop-down list, click the first scatter plot. This inserts a scatter plot that looks like this:
+
+    ![A scatter plot showing temperature and sales](./images/sales-temp-scatter-plot.png)
+ 
+    Note that the scatter plot seems to reflect a linear relationship between temperature and sales, in which the higher the temperature, the more sales there are.
+
+8. Move the chart to the side of the worksheet to create some space, and in cell **D1**, enter the text **Correlation**. Then select cell **D2**, and enter the following formula in the ***fx*** bar:
+
+    ```
+    =CORREL(A2:A366,B2:B366)
+    ```
+
+    This calculates the correlation between temperature and sales; and should produce a value of around 0.989832. Correlation is a statistical measurement of the strength of an apparent relationship between two numeric variables – in this case, temperature and sales.
+
+    Your worksheet should look like this:
+
+    ![The correlation of around 0.99 for Temperature and Sales is shown in the worksheet](./images/temp-sales-correlation.png)
+ 
+    Correlation is measured as a value between -1 and 1. A value close to 1 indicates a positive correlation; in other words, high values for one variable seem to correspond with high values for the other variable. A value close to -1 on the other hand indicates a negative correlation, in which high values for one variable correspond to low values for the other variable. A value close to 0 indicates the lack of any discernible relationship between the variables.
+
+    With a correlation of almost 0.99, there is a strong positive relationship between temperature and sales.
+
+    > **Note**: Statisticians often quote the mantra *"correlation is not causation"*. We can use correlation to determine that days with high sales volumes tend to have high temperatures; but we can’t say that Rosie sold a lot of lemonade on a particular day *because* the temperature was high – just as we can’t say that a day was particularly hot *because* Rosie sold a lot of lemonade. In fact, there could be a "hidden" third factor that affects both sales of lemonade and temperature. For example, during the summer months, when lemons are in season, the temperature tends to be higher.
+
+### Challenge: Calculate rainfall / sales correlation
+
+1. Calculate the correlation between Rainfall and Sales.
+2. What does the correlation indicate?
+
+### Conduct a Hypothesis Test
+
+1. On the **Lemonade** worksheet, clear any filters from the table of lemonade sales data. Then click in cell A1 and then press CTRL+ A (**&#8984;** + A on Mac OSX) to select the entire table of lemonade sales data and copy it to the clipboard.
+2. Add a new worksheet to the workbook and paste the copied data into cell **A11** of the new worksheet (leaving ten blank rows above the pasted data), like this:
+
+    ![A new worksheet with the lemonade data and 10 blank rows above it](./images/new-sheet-10-blank-rows.png)
+
+    You have hypothesized that on days where Rosie distributes a higher than average number of flyers, sales are higher. You need to test this hypothesis to determine if any increase in sales on days with higher than average flyer distribution can be explained by chance, or if the variation in sales is too improbable to be explained by chance alone. To help determine this, you need to create a data sample containing sales for days with higher than average flyer distribution.
+
+3. In the drop-down list for the **Flyers** column header, in the **Number Filters** sub-menu, click **Above Average**.
+4. Select and copy the **Sales** column (including the header), and then select cell **K1** and in the **Paste** (&#128203;) drop-down list, click **Paste Values**. This pastes the filtered sales data sample (which contains the observations from days with higher than average flyer distribution) as shown here:
+
+    ![A column of sales values for days with higher than average flyer distribution](./images/filtered-sales.png)
+ 
+5. Clear the filter from the **Flyers** column so that the table starting in row 11 shows the full population of sales data.
+6. Select the sample data (including the header) and move it to cell **K11**, then In cell **K11**, change the column header to **Sample** as shown here:
+
+    ![A column of sales values for days with higher than average flyer distribution](./images/sample-sales.png)
+ 
+7. Select the **Sales** column of data (including the header), and insert a histogram showing the distribution of sales. Change the chart title to **Sales**, and then resize and position the histogram in the space above the data, like this:
+
+    ![A histogram of sales above the table of data](./images/sales-histogram-above-table.png)
+ 
+8. In cell **G2**, enter the text **Mean**, and then select cell **H2** and enter the following formula to calculate the mean sales value for all of the data:
+
+    ```
+    =AVERAGE(H12:H376)
+    ```
+
+9.	In cell **G3**, enter the text **StDev**, and then in cell **H3** enter the following formula to calculate the standard deviation for all sales values:
+
+    ```
+    =STDEV.P(H12:H376)
+    ```
+
+10.	In cell **G4**, enter the text **Sample**, and then in cell **H4** enter the following formula to calculate the sample mean of sales for days with higher than average flyer distribution (of which there are 172):
+
+    ```
+    =AVERAGE(K12:K183)
+    ```
+
+    In cells **G2** to **H4**, you should now have the following values:
+
+    - Mean: 25.32329
+    - StDev: 6.884139
+    - Sample: 29.99419
+
+    From this, you can see that the sample mean of approximately 29.99 (the mean number of sales on days with higher than average flyer distribution) is indeed greater than the population mean of around 25.32 (the mean number of sales on all days). You can also see in the histogram that the population mean is in the middle, and the sample mean is to the right. However, there is some variance in the population data resulting in a standard deviation of around 6.88. So can the higher sales on days where Rosie distributed more flyers be explained simply by this normal variance (we’ll call this our *null hypothesis*), or is there enough evidence to reject that explanation in favor of an *alternative hypothesis* that the sales increase on these days is statistically significant enough to have been caused by something other than random chance?
+
+    To determine this, we’ll conduct something called a Z-Test.
+
+11. In cell **G5**, enter the text **P-Value**, and then select cell **H5** and enter the following formula:
+
+    ```
+    =Z.TEST(K12:K183, H2, H3)
+    ```
+
+    This calculates a *p-value*, which is the probability of observing a sample mean at least as high as our value of 29.99 in a 172 sample distribution from a population with a mean of 25.32, and a standard deviation of 6.88.
+
+12. The p-value is probably displayed in scientific notation, with a value similar to 2.83128E-19. To view this as a regular decimal number, select the p-value (in cell **H4**) and on the **Home** tab of the ribbon, in the **Number** section select the **Number** format and then repeatedly click the **Increase Decimal** (<sup>&larr;0.</sup><sub>00</sub>) button until the first non-zero decimal place is shown. It should be close to 0.0000000000000000003, as shown here:
+
+    ![A Z.TEST function returns a p-value, which is formatted as a number](./images/p-value.png)
+
+    This is clearly a very small probability, and in fact it is common to use a value of 0.05 (or 5%) as the threshold for rejecting the null hypothesis in favor of the alternative hypothesis. So in this case, the p-value is much lower than this threshold and we can reject the null hypothesis that the increase in sales can be explained by random variance and conclude that there is some non-random factor at work here. Note that we can’t categorically say that the increase in sales is because of the higher number of flyers distributed; but we can say that on the days where more leaflets were distributed, there was a statistically significant increase in sales.
+
+    It’s worth briefly thinking a little bit about what this means. What does this show? We have shown that, had the results been due to chance (i.e., H0 = true), we could possibly still get these results. In other words, we haven’t disproven chance as an explanation. However, we showed that the probability of getting these results is very, very, very small…only 0.0000000000000000003. We are safe in rejecting chance as an explanation for our results here.
+
+    There’s a lot more to hypothesis testing than we have room to discuss here. The example above is a *one-sample* test (it tests a single sample of data to compare the sample mean with a hypothesized mean). The example is also a *one-tailed* test, and in this case, the test is right-tailed (our p-value describes the probability of a sample mean being significantly *higher* than the hypothesized mean, which means the critical area for rejection of the null hypothesis is under the right tail of a normal distribution curve.
+
+    You can also use the Excel Z.TEST function to perform a *two-tailed* test, in which the alternative hypothesis is that the sample mean is not equal to the hypothesized mean (so there are critical areas under both the right and left tails of the normal distribution curve). To perform 2-tailed tests in Excel, you need to manipulate the value retuned by the Z.TEST function to calculate the correct p-value as follows:
+
+    ```
+    = 2*MIN(Z.TEST(SampleRange, HypothesizedMean [,PopStDev]),
+    1–Z.TEST(SampleRange, HypothesizedMean [,PopStDev]))
+    ```
+
+    For more information about using the Z.TEST function in Excel, see the documentation at https://support.office.com/en-us/article/Z-TEST-function-D633D5A3-2031-4614-A016-92180AD82BEE.
+
+### Challenge: Test rainfall hypothesis
+
+1. Test the following hypotheses:
+    - H0 (*null hypothesis*): Higher mean sales on days with lower than average rainfall can be explained by random variance.
+    - H1 (*alternative hypothesis*): Mean sales on days with lower than average rainfall are significantly higher than the population mean and can’t be explained by random variance.
+2.	You should reject the null hypothesis if the p-value for your test is less than 0.05.
+

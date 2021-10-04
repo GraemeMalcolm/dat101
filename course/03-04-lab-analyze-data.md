@@ -85,30 +85,36 @@ It can often be easier to identify trends and relationships in data by creating 
 
     Make sure your table looks like the one shown, before you proceed (note that the date may be formatted differently for your location).
 
-2. Select the cells containing the date, daily sales, and temperature values only, but **<u>not</u>** the **Date**, **Sum of Sales**, and **Sum of Temperature** header cells or the **Grand Total** footer cells; and then on the **Home** tab of the ribbon, click the **Copy** button (&#128464;) to copy the selected cells to the clipboard.
-3. Under the worksheet, click the **New Sheet** button (**+**) to add a new worksheet to the workbook.
-4. In the new sheet, select cell **A2**, and then on the **Home** tab click the **Paste** button (&#128203;) to paste the copied cells into the new worksheet. You may need to widen the **A** column to see the dates.
-5. In cells **A1** to **C1**, add the columns headers **Date**, **Sales**, and **Temperature**. Your new worksheet should look like this:
+2. Select the cells containing the date, daily sales, and temperature values only, but **<u>not</u>** the **Date**, **Sum of Sales**, and **Sum of Temperature** header cells or the **Grand Total** footer cells:
+    - Click cell **A4**, which should contain the date value for January 1 2017.
+    - Then press SHIFT + CTRL + **&#8680;** (SHIFT + **&#8984;** + **&#8681;** on Mac OSX) to extend the selection to include the sales and temperature values.
+    - Then press SHIFT + CTRL + **&#8681;** (SHIFT + **&#8984;** + **&#8681;** on Mac OSX) to select the rows beneath the current selection.
+    - Finally press SHIFT + **&#8679;** to de-select the grand totals.
+
+3. On the **Home** tab of the ribbon, click the **Copy** button (&#128464;) to copy the selected cells to the clipboard.
+4. Under the worksheet, click the **New Sheet** button (**+**) to add a new worksheet to the workbook.
+5. In the new sheet, select cell **A2**, and then on the **Home** tab click the **Paste** button (&#128203;) to paste the copied cells into the new worksheet. You may need to widen the **A** column to see the dates.
+6. In cells **A1** to **C1**, add the columns headers **Date**, **Sales**, and **Temperature**. Your new worksheet should look like this:
 
     ![A new worksheet showing sales amd temperature totals by date](./images/new-sheet-sales-date-temp.png)
 
-6. Select the **Date** and **Sales** data, including the headers (but <u>not</u> the temperature data). Then on the **Insert** tab of the ribbon, in the **Line** drop-down list, click the first line chart format. Excel inserts a line chart like this:
+7. Select the **Date** and **Sales** data, including the headers (but <u>not</u> the temperature data). Then on the **Insert** tab of the ribbon, in the **Line** drop-down list, click the first line chart format. Excel inserts a line chart like this:
 
     ![A line chart showing sales by date](./images/sales-line-chart.png)
 
     Note that the line chart shows daily fluctuations in sales, but the general trend seems to indicate that sales are higher during the summer months and lower at the beginning and end of the year.
 
-7. Delete the chart, and then select all the data and headers, including **Temperature** and insert a new line chart. This inserts a chart like this:
+8. Delete the chart, and then select all the data and headers, including **Temperature** and insert a new line chart. This inserts a chart like this:
 
     ![A line chart showing sales and temperature by date](./images/sales-temp-line-chart.png)
 
     This time, the chart includes separate series for **Sales** and **Temperature**. Both series show a similar pattern; it seems sales and temperature both increase over the summer months.
 
-8. Select the chart and double-click the chart title. Then in the **Chart** pane on the **Format** tab, expand **Chart Title** and change the chart title to *Sales and Temperature*:
+9. Select the chart and double-click the chart title. Then in the **Chart** pane on the **Format** tab, expand **Chart Title** and change the chart title to *Sales and Temperature*:
 
     ![Editing the chart title](./images/edit-chart-title.png)
 
-9. Close the **Chart** pane.
+10. Close the **Chart** pane.
 
 ### View revenue by weekday
 
