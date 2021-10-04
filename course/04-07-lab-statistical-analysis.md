@@ -370,8 +370,7 @@ So far, we’ve explored descriptive statistics that describe the distribution o
     You can also use the Excel Z.TEST function to perform a *two-tailed* test, in which the alternative hypothesis is that the sample mean is not equal to the hypothesized mean (so there are critical areas under both the right and left tails of the normal distribution curve). To perform 2-tailed tests in Excel, you need to manipulate the value retuned by the Z.TEST function to calculate the correct p-value as follows:
 
     ```
-    = 2*MIN(Z.TEST(SampleRange, HypothesizedMean [,PopStDev]),
-    1–Z.TEST(SampleRange, HypothesizedMean [,PopStDev]))
+    = 2*MIN(Z.TEST(SampleRange, HypothesizedMean [,PopStDev]), 1–Z.TEST(SampleRange, HypothesizedMean [,PopStDev]))
     ```
 
     For more information about using the Z.TEST function in Excel, see the documentation at https://support.office.com/en-us/article/Z-TEST-function-D633D5A3-2031-4614-A016-92180AD82BEE.
@@ -381,5 +380,5 @@ So far, we’ve explored descriptive statistics that describe the distribution o
 1. Test the following hypotheses:
     - H0 (*null hypothesis*): Higher mean sales on days with lower than average rainfall can be explained by random variance.
     - H1 (*alternative hypothesis*): Mean sales on days with lower than average rainfall are significantly higher than the population mean and can’t be explained by random variance.
-2.	You should reject the null hypothesis if the p-value for your test is less than 0.05.
+2. You should reject the null hypothesis if the p-value for your test is less than 0.05.
 
