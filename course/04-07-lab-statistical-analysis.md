@@ -357,7 +357,7 @@ So far, we’ve explored descriptive statistics that describe the distribution o
 
     This calculates a *p-value*, which is the probability of observing a sample mean at least as high as our value of 29.99 in a 172 sample distribution from a population with a mean of 25.32, and a standard deviation of 6.88.
 
-12. The p-value is probably displayed in scientific notation, with a value similar to 2.83128E-19. To view this as a regular decimal number, select the p-value (in cell **H4**) and on the **Home** tab of the ribbon, in the **Number** section select the **Number** format and then repeatedly click the **Increase Decimal** (<sup>&larr;0.</sup><sub>00</sub>) button until the first non-zero decimal place is shown. It should be close to 0.0000000000000000003, as shown here:
+12. The p-value is probably displayed in scientific notation, with a value similar to 2.83128E-19. To view this as a regular decimal number, select the p-value (in cell **H4**) and on the **Home** tab of the ribbon, in the **Number** section select the **Number** format and then repeatedly click the **Increase Decimal** (<sup>&larr;0</sup><sub>.00</sub>) button until the first non-zero decimal place is shown. It should be close to 0.0000000000000000003, as shown here:
 
     ![A Z.TEST function returns a p-value, which is formatted as a number](./images/p-value.png)
 
