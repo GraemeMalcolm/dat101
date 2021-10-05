@@ -382,3 +382,4 @@ So far, we’ve explored descriptive statistics that describe the distribution o
     - H1 (*alternative hypothesis*): Mean sales on days with lower than average rainfall are significantly higher than the population mean and can’t be explained by random variance.
 2. You should reject the null hypothesis if the p-value for your test is less than 0.05.
 
+[< Back](./04-06-hypothesis-testing.md) | [Next >](./05-00-machine-learning.md)
