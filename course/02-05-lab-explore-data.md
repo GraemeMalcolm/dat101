@@ -92,7 +92,7 @@ In this exercise, you will use formulae to create derived columns that extend th
 
     ![The Insert Sheet Columns menu option](./images/ribbon.png)
 
-2. Click the **B** column header to select the entire **B** column. Then on the **Home** tab of the ribbon, in the **Cells** section in the **Insert** drop-down menu, click **Insert Sheet Columns** (depending on the size of your browser window, you may need to expand a **Cells** menu to see the **Insert** menu.
+2. Click the **B** column header to select the entire **B** column. Then on the **Home** tab of the ribbon, in the **Cells** section, in the **Insert** drop-down menu, click **Insert Sheet Columns** (depending on the size of your browser window, you may need to expand a **Cells** menu to see the **Insert** menu.
 
     ![The Insert Sheet Columns menu option](./images/insert-sheet-columns.png)
 
