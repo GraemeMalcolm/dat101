@@ -373,7 +373,7 @@ So far, we’ve explored descriptive statistics that describe the distribution o
     = 2*MIN(Z.TEST(SampleRange, HypothesizedMean [,PopStDev]), 1–Z.TEST(SampleRange, HypothesizedMean [,PopStDev]))
     ```
 
-    For more information about using the Z.TEST function in Excel, see the documentation at https://support.office.com/en-us/article/Z-TEST-function-D633D5A3-2031-4614-A016-92180AD82BEE.
+    For more information about using the Z.TEST function in Excel, see the <a href="https://support.office.com/en-us/article/Z-TEST-function-D633D5A3-2031-4614-A016-92180AD82BEE" target="_blank" rel="noopener noreferrer">Excel documentation</a>.
 
 ### Challenge: Test rainfall hypothesis
 
